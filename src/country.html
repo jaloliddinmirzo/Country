@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="h-full">
+<html lang="en" class="h-full dark">
 
 <head>
   <meta charset="UTF-8">
@@ -12,13 +12,14 @@
   <title>Davlatlar</title>
 </head>
 
-<body class="h-full bg-[#FAFAFA] text-[var(--clr-800)]">
+<body class="h-full bg-[#FAFAFA] dark:bg-[#202C36] text-[var(--clr-800)] dark:text-[#FFF]">
 
   <div class="container mx-auto">
-    <header class=" bg-white  py-6 px-20 flex justify-between items-center">
+    <header class=" bg-white dark:bg-[#2B3844] py-6 px-20 flex justify-between dark:text-[#FFF] items-center">
       <h1 class="font-bold text-2xl">Where in the world?</h1>
       <ul class="flex items-center gap-2">
-        <img src="./img/dark.svg" alt="">
+        <img src="./img/mDark.svg" alt="moon" id="light" >
+        <img src="./img/dark.svg" alt="moon" id="dark" class="hidden">
         <span class="font-semibold" >Dark Mode</span>
       </ul>
     </header>
@@ -26,8 +27,9 @@
 
     <main class="px-20 py-12">
         <a href="index.html">
-      <div class="card-shadow inline-flex  py-2.5 px-8 gap-2.5 cursor-pointer select-none mb-20">
-        <img src="./img/arrow.svg" alt="">
+          <div class="card-shadow inline-flex  py-2.5 px-8 gap-2.5 cursor-pointer dark:bg-[#2B3844] select-none mb-20">
+        <img id="arrow" src="./img/arrow.svg" alt="" class="hidden">
+        <img id="arrowDark" src="./img/arrowDark.svg" alt="" class="">
         Back
       </div>
     </a>
@@ -39,6 +41,8 @@
     </main>
 
   </div>
+
+  <div class="wrap fixed z-[1] w-full h-full left-0 top-0 bg-[rgba(0,0,0,0.5)] blur-sm flex hidden justify-center items-center"><img src="./img/loadr.gif" alt="" width="200" height="200" class="absolute  z-10 "></div>
 <script src="./js/country.js"></script>
 </body>
 
