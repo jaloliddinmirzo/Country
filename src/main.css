@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer base {
+    :root{
+         --clr-800:#111517
+    }
+}
+
+@layer components {
+    .input-shadow{
+         @apply shadow-[0px_2px_9px_rgba(0,0,0,0.0532439)];
+    }
+
+    .card-shadow{
+         @apply shadow-[0px_0px_7px_2px_rgba(0,0,0,0.0294384)] rounded;
+    }
+
+    .shadow{
+         @apply shadow-[0px_0px_4px_1px_rgba(0,0,0,0.104931)] rounded-sm;
+    }
+
+}

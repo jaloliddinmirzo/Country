@@ -61,6 +61,8 @@ async function getContry(name){
         </div>
         `
     }
+
+    
    
 }
 
