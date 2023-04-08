@@ -29,8 +29,6 @@ async function getContry(name) {
         }
 
         let leng = Object.values(languages)
-        console.log(data);
-        console.log(leng);
         let el = ` 
         <img src=${flags.png} alt="" width="560" height="401">
 
