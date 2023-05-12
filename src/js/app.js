@@ -71,7 +71,6 @@ function upDateUI() {
         </div>
         `
   })
-
   countriesEL.innerHTML = html;
 }
 
